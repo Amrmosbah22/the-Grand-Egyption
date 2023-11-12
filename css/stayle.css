@@ -196,10 +196,20 @@ ul{
     align-items: center;
     justify-content: space-between;
     padding-top: 30px;
+    overflow: hidden;
 }
 .aboutMuseum img{
     max-width: 30em;
     border-radius: 5px;
+    transition: var(--main-transition);
+}
+.aboutMuseum img:hover{
+    transform: scale(1.1);
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+    .aboutMuseum img{
+        max-width: 22em;
+    }
 }
 @media (max-width: 767px){
     .aboutMuseum .image{
