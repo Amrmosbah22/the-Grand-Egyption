@@ -198,28 +198,6 @@ ul{
     padding-top: 30px;
     overflow: hidden;
 }
-.aboutMuseum img{
-    max-width: 30em;
-    border-radius: 5px;
-    transition: var(--main-transition);
-}
-.aboutMuseum img:hover{
-    transform: scale(1.1);
-}
-@media screen and (min-width:768px) and (max-width:1023px){
-    .aboutMuseum img{
-        max-width: 22em;
-    }
-}
-@media (max-width: 767px){
-    .aboutMuseum .image{
-        flex-direction: column;
-    }
-    .aboutMuseum img{
-        max-width: 100%;
-        padding-top: 20px;
-    }
-}
 .aboutMuseum .box .txt p{
     padding: 10px 0;
     font-size: 18px;
@@ -229,6 +207,93 @@ ul{
     color: var(--main-color);
 }
 /* End About Museum */
+/* start info */
+.infor{
+    padding-bottom: var(--main-padding-bottom);
+}
+.infor h2{
+    font-weight: 400;
+    font-size: 37px;
+}
+.infor .mainBox{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px
+}
+.infor .box{
+    padding-top: 20px;
+    position: relative;
+}
+.infor .box .overlay{
+    position: absolute;
+    background-color:  #00000079;
+    width: 100%;
+    height: 93%;
+    border-radius: 5px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    transition: var(--main-transition);
+}
+.infor .box .overlay:hover{
+    background-color: #000000ad;
+}
+.infor .box .overlay .text{
+    color: #fff;
+    padding: 10px 5px;
+}
+.infor .box .overlay .text h3{
+    font-size: 14px;
+    font-weight: bold;
+}
+.infor .box .overlay .text p{
+    padding-top: 10px;
+}
+.infor .box .overlay .text span{
+    color: var(--main-color);
+}
+.infor .box .overlay:hover .text {
+    color: var(--main-color);
+} 
+.infor .box img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+/* end info */
+/* Start inside */
+.inside{
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+}
+.inside h2{
+    color: var(--main-color-alt);
+    font-size: 30px;
+    font-weight: 400;
+}
+.inside .text{
+    padding: 20px 0;
+}
+/* End inside */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Start Suggestions */
 .suggestions{
     padding-bottom: var(--main-padding-bottom);
@@ -384,9 +449,14 @@ ul{
     line-height: 1.9;
 }
 .book .text h2{
-    color: #fff;
+    color: var(--main-color);
     font-size: 45px;
     font-weight: 400;
+}
+.book .text h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
 }
 .book .text a{
     color: #fff;
@@ -394,6 +464,7 @@ ul{
     padding: 10px 20px;
     border-radius: 5px;
     transition: var(--main-transition);
+    line-height: 5;
 }
 .book .text a:hover{
     background-color: var(--main-color-alt);
